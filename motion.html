@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인식 게임</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div>Teachable Machine 자세 모델</div>
+    <button type="button" id="startButton" onclick="init()">시작</button>
+    <button type="button" id="stopButton" style="display:none;" onclick="stopGame()">게임 정지</button>
+    <div><canvas id="canvas"></canvas></div>
+    <div id="label-container"></div>
+    <div id="instruction">현재 명령어: </div>
+    <div id="score-display">점수: 0</div>
+
+    <!-- 아래와 같이 game.js를 추가합니다. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
